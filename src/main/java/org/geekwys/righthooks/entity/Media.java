@@ -1,15 +1,15 @@
-package org.geekwys.righthooks.models;
+package org.geekwys.righthooks.entity;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import jakarta.persistence.*;
+import lombok.*;
 
-import javax.persistence.*;
 
 @Entity
-@Getter
-@Setter
+@Data
+@Builder
+@AllArgsConstructor
 @NoArgsConstructor
+@Table(name = "media")
 public class Media {
 
     @Id
